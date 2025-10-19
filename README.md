@@ -28,8 +28,14 @@ A minimal article-scraping service.
     docker compose exec backend bash
     ```
 4. **Run management commands inside the container**
+    
+    Scrape predefined articles:
     ```bash
     python manage.py scrape_articles
+    ```
+    or
+    ```bash
+    python manage.py scrape_articles --url "article url"
     ```
 
 ### Option 2 - Local env (venv / uv)
